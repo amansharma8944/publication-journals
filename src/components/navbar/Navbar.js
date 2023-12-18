@@ -14,6 +14,9 @@ import Popper from '@mui/material/Popper';
 // import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import Stack from '@mui/material/Stack';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const itemsNav = [{ title: "HOME" },
@@ -33,16 +36,20 @@ const itemsNav = [{ title: "HOME" },
 
 const Navbar = () => {
     const [open, setOpen] = React.useState(false);
+    const [cartCounter, setCartCounter] = useState(0);
+   
+
+
   const anchorRef = React.useRef(null);
+  const usenavigate=useNavigate();
 
+    const handleToggle = (title) => {
 
-
-
-
-
-
-    const handleToggle = () => {
         setOpen((prevOpen) => !prevOpen);
+
+        if (title=="HOME") {
+          usenavigate("/")
+        }
       };
     
       const handleClose = (event) => {
@@ -135,6 +142,16 @@ const Navbar = () => {
         if (debounceTimer) clearTimeout(debounceTimer);
       };
     }, []);
+
+
+    const data=    useSelector(state=>state?.counter.items)
+    useEffect(() => {
+    setCartCounter(data.length)
+    console.log(cartCounter);
+    
+    
+    }, [data])
+    
     return (
         <>
             <nav className={` sticky bg-white z-[2] top-0 shadow-md mb-4 w-[100vw] ${isVisible?"translate-y-[0px]":"-translate-y-[90px]"} transition ease-in-out delay-[500]  `}>
@@ -172,7 +189,7 @@ const Navbar = () => {
                    aria-controls={open ? 'composition-menu' : undefined}
                    aria-expanded={open ? 'true' : undefined}
                    aria-haspopup="true"
-                   onClick={handleToggle}
+                   onClick={()=>handleToggle(item.title)}
                   className='hover:cursor-pointer'
                 >
                   {item.title}
@@ -181,6 +198,28 @@ const Navbar = () => {
               </div>
             );
           })}
+         <div className='relative'>
+
+              <ShoppingCartIcon
+          sx={{
+            width:"28px",
+            height:"31px",
+            marginLeft:"36px",
+            position:"relative",
+            "&:hover":{
+              cursor:"pointer"
+            }
+          }}
+
+          onClick={()=>{
+            usenavigate("/cart")
+            
+          }}
+          />
+
+          <p className='absolute -top-3 -right-3 text-[white] bg-[purple] w-[20px] h-[20px] flex justify-center rounded-full'>{cartCounter}</p>
+        
+            </div>
         </List>
       </div>
                 {menuContent}

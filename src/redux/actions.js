@@ -9,13 +9,13 @@ export const addToCart = (title,src,desc,price,index) => {
   payload: {price,desc,title,src,index}
 });}
 
-export const removeFromCart = (itemId) => ({
+export const removeFromCart = (index) => ({
   type: REMOVE_FROM_CART,
-  payload: itemId
+  payload: {index}
 });
 
 
-export const updateItemQuantity = (itemId, quantity) => ({
+export const updateItemQuantity = (index, quantity) => ({
     type: UPDATE_ITEM_QUANTITY,
-    payload: { itemId, quantity }
+    payload: { index, quantity }
   });

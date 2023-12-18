@@ -1,12 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { addToCart, removeFromCart } from '../../redux/actions';
 
 
 
+
 const BookComponent = ({title,src,desc,price,index}) => {
+
     const [hovered, setHovered] = useState(false);
+    const nav=useNavigate();
+    
     const hoverEnabled=()=>{
         setHovered(true);
        
@@ -55,7 +60,11 @@ dispatch(removeFromCart(index))
         
 
          
-        <div className='flex w-[full] flex-col items-center hover:cursor-pointer hover:text-[green] pt-[15px]'>
+        <div className='flex w-[full] flex-col items-center hover:cursor-pointer hover:text-[green] pt-[15px]'
+        onClick={()=>{
+         nav(`/BookDetail/${index}`)
+        }}
+        >
                 <h1 className='font-[500] text-[15px] '>{title.slice(0,20).toUpperCase()}{title.length>20?"...":""}</h1>
             <p className='text-[green]'>$1,2344</p>
         </div>

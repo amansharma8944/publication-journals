@@ -8,8 +8,8 @@ const BannerforAD = () => {
 <img src="bannersection/offerbannernew.jpg" alt="" className='w-[45vw]' />
 <div className='flex flex-col items-center w-full'>
     <p className='text-[28px] mb-[19px]'>SPECIAL OFFER</p>
-    <h1 className='font-[700] text-[33px] text-[green]'>GET 20%</h1>
-    <p className='text-[31px] text-center mt-[20px]'>OFF ON YOUR ORDER OF RS. 3000 OR 
+    <h1 className='font-[700] text-[33px] text-[green]'>GET 20% OFF </h1>
+    <p className='text-[23px] text-center mt-[20px]'>ON YOUR ORDER OF RS. 3000 OR 
     <br/>
     MORE
     </p>

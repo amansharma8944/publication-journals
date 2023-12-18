@@ -1,19 +1,22 @@
 import React from 'react'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import FormForFooter from './FormForFooter';
 const Footer = () => {
     
     return (
         <footer className='w-[full] flex  mt-[15vh] pt-[5vh] bg-[#e9e7e7]'>
-            <div className='flex-[1] px-[15px] border-r-[1px] border-[black] pl-[23px]'>
+            <div className='flex-[0.5] px-[15px] border-r-[1px] border-[black] pl-[23px]'>
                 <h1 className='font-[450] text-[22px] text-[green] mb-[36px]'>ABOUT US</h1>
                 <p className='text-justify  w-[83%] tracking-[.5px] leading-[33px]'>
                     Publications Division is a repository of books and journals highlighting subjects of national importance and India’s rich cultural heritage. Established in 1941, Publications Division has emerged as a premier publishing house of the Government of India, enriching the national knowledge repository in distinctive streams as under : ....
 
 
                 </p>
-                <button className='mt-[10vh]'>more</button>
+               
 
             </div>
             <div className='flex-[0.5] px-[15px] border-r-[1px] border-[black] ml-[5px]'>
@@ -47,7 +50,7 @@ const Footer = () => {
 
 
             </div>
-            <div className='flex-[1] px-[15px] border-r-[1px]'>
+            <div className='w-[24vw] px-[15px] border-r-[1px]  border-[black]'>
                 <h1 className='font-[450] text-[22px] text-[green] mb-[36px]'>Information</h1>
                 <ul>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
@@ -63,28 +66,93 @@ const Footer = () => {
                 </ul>
                 <h1 className='font-[450] text-[22px] text-[green] my-[30px]'>Get In Touch</h1>
                 <ul className='flex'>
+
+                <li>
+                  <a href="https://www.linkedin.com/in/publications-division-6aab1b285/?originalSubdomain=in" target='_blank'>
+                  <LinkedInIcon
+                      sx={{
+                        height:"35px",
+                        width:"35px",
+                        marginLeft:"",
+                        "&:hover":{
+                            color:"blue"
+                            ,cursor:"pointer"
+                        }}}
+                    
+                    />
+                  </a>
+
+                    </li>
+
+                    <li>
+                      <a href="https://www.youtube.com/@PublicationsDivisionGoI" target='_blank'>
+                      <YouTubeIcon
+                         sx={{
+                            height:"35px",
+                            width:"35px",
+                            marginLeft:"15px",
+                            "&:hover":{
+                                color:"red",
+                                cursor:"pointer"
+                            }
+                        
+                        }}
+                       />
+
+                      </a>
+                        
+                    </li>
+
+                    <li>
+                  <a href="https://www.facebook.com/publicationsdivision/" target='_blank'>
+
+                  <FacebookIcon
+                    
+                    sx={{ height:"35px",
+                    width:"35px",
+                    marginLeft:"15px",
+                    "&:hover":{
+                        color:"blue",
+                        cursor:"pointer"
+                    }}}
+                    />
+                  </a>
+
+                    </li>
+
+
+
+
+                    <li><TwitterIcon
+                     sx={{
+                        height:"35px",
+                        width:"35px",
+                        marginLeft:"15px",
+                        "&:hover":{
+                            color:"#1DA1F2",
+                            cursor:"pointer"
+                        }
+                    
+                    }}/></li>
                     <li><InstagramIcon sx={{
                         height:"35px",
                         width:"35px",
+                        marginLeft:"15px",
                         "&:hover":{
                             color:"purple",
                          cursor:"pointer"
                         }
                     
                     }}/></li>
-                    <li><TwitterIcon
-                     sx={{
-                        height:"35px",
-                        width:"35px",
-                        marginLeft:"25px",
-                        "&:hover":{
-                            color:"#1DA1F2"
-                        }
-                    
-                    }}/></li>
+                  
+                  
                 </ul>
 
             </div>
+
+          <div className='flex-[0.5] px-[15px]  border-[black] ml-[5px]'>
+          <FormForFooter/>
+          </div>
         </footer>
     )
 }

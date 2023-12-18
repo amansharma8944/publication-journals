@@ -14,10 +14,11 @@ const allproducts=[
       src:"/booksImages/agni-ki-udaan-original-2.jpeg"
       ,price:1500,
   },
-  { i:2,  
-    title:"Agni ki Udaan ",
-      src:"/booksImages/agni-ki-udaan-original-3.jpeg"
-      ,price:1500,
+  {  
+    i:2,
+    title:"builders of modern india AKA_",
+      src:"/booksImages/buildersofmodernindiaAKA_.jpg"
+      ,desc:" Explore the profound impact of Maulana Abul Kalam Azad on modern India in Builders of Modern India: Abdul Kalam Azad.This book sheds light on the life and legacy of the eminent scholar, freedom fighter, and the country's first Education Minister, who played a crucial role in shaping India's educational and political landscape."
   },
   { i:3, 
     title:"Asiatic Lion - Reviving the Pride of Gir",
@@ -64,82 +65,109 @@ const allproducts=[
 
   
   ]
+  
 const latest_journal=[
-      {   title:"builders of modern india AKA_",
-          src:"/booksImages/builders of modern india AKA_.jpg"
-          ,desc:" Explore the profound impact of Maulana Abul Kalam Azad on modern India in Builders of Modern India: Abdul Kalam Azad.This book sheds light on the life and legacy of the eminent scholar, freedom fighter, and the country's first Education Minister, who played a crucial role in shaping India's educational and political landscape."
+    { i:10,  
+        title:"Agni ki Udaan ",
+          src:"/booksImages/agni-ki-udaan-original-3.jpeg"
+          ,price:1500,
       },
-      {   title:"netaji-a-life-in-pictures",
+
+    
+      { i:11,
+          title:"netaji-a-life-in-pictures",
           src:"/booksImages/netaji-a-life-in-pictures.jpeg",
           desc:" Immerse yourself in the visual narrative of Subhas Chandra Bose's life with Netaji - The Life in Pictures.This book provides a captivating visual journey, offering rare and iconic photographs that bring to life the extraordinary legacy of the charismatic leader."
       },
-      {   title:"poora_HAI_VISHWAS",
+      { i:12, 
+         title:"poora_HAI_VISHWAS",
           src:"/booksImages/poora_HAI_VISHWAS.jpg",
           desc:" readers are taken on a motivational journey that emphasizes the power of belief. This book, in Hindi, inspires individuals to have unwavering faith in their abilities and dreams. Through anecdotes and wisdom, it encourages readers to overcome challenges and pursue their aspirations with confidence."
       },
-      {   title:"sabka saath sabka vikas",
+      {  i:13,  
+         title:"sabka saath sabka vikas",
           src:"/booksImages/sabka saath sabka vikas.jpg",
           desc:"Sabka Saath Sabka Vikas in Hindi encapsulates the vision of inclusive development. This book explores the concept of collective growth and progress, promoting a harmonious society where every individual contributes to the overall welfare of the nation."
       },
-      {   title:"Sardar Patel Sachitra jivani",
+      {  i:14,   
+        title:"Sardar Patel Sachitra jivani",
           src:"/booksImages/Sardar Patel Sachitra jivani.jpeg"
       },
-      {   title:"SARDAR_PATEL_KI_ANMOL_VANI",
+      {  
+        i:15, 
+        title:"SARDAR_PATEL_KI_ANMOL_VANI",
           src:"/booksImages/SARDAR_PATEL_KI_ANMOL_VANI.jpg",
           desc:" Delve into the wisdom and leadership of Sardar Vallabhbhai Patel through Anmol Vaani. This Hindi book provides a collection of invaluable quotes and thoughts, shedding light on the principles and philosophies that guided this key architect of modern India"
       },
-      {   title:"The Gospel of Buddha",
+      {  i:16,  
+         title:"The Gospel of Buddha",
           src:"/booksImages/The Gospel of Buddha.jpg",
           desc:"Delve into the spiritual and philosophical teachings of Buddhism with The Gospel of Buddha. This book, rooted in arts and culture, presents the timeless wisdom of Buddha, offering a profound exploration of the principles that form the core of this ancient and influential belief system."
       },
-      {   title:"The Warrior Democrat",
+      {  i:17,  
+         title:"The Warrior Democrat",
           src:"/booksImages/THE_WARRIOR_DEMOCRAT_-_SYAMA_PRASAD_MOOKERJEE.jpg",
           desc:"The Warrior Democrat explores the intersection of democracy and leadership, drawing on historical and contemporary examples. This book delves into the qualities that make a leader resilient and effective in navigating the challenges of democratic governance"
       },
-      {   title:"Wings of Fire",
+      { i:18, 
+          title:"Wings of Fire",
           src:"/booksImages/Wings_of_Fire_by_A_P_J_Abdul_Kalam_Book_Cover.jpg"
       },
-      {   title:"Yojana Classics",
+      {  i:19,  
+         title:"Yojana Classics",
           src:"/booksImages/Yojana_Classics_Cover_page.jpg",
           desc:"Yojana Classics - Arts and Culture is a literary treasure trove that explores the intersection of arts and culture in India. This compilation offers insightful essays and articles from the renowned Yojana magazine, providing a holistic perspective on the country's cultural heritage"
       },
       ]
 const latestbook=[
-      {   title:"builders of modern india AKA_",
+      { i:20, 
+           title:"builders of modern india AKA_",
           src:"/booksImages/builders of modern india AKA_.jpg"
           ,desc:" Explore the profound impact of Maulana Abul Kalam Azad on modern India in Builders of Modern India: Abdul Kalam Azad.This book sheds light on the life and legacy of the eminent scholar, freedom fighter, and the country's first Education Minister, who played a crucial role in shaping India's educational and political landscape."
       },
-      {   title:"netaji-a-life-in-pictures",
+      {  i:21,   
+        title:"netaji-a-life-in-pictures",
           src:"/booksImages/netaji-a-life-in-pictures.jpeg",
           desc:" Immerse yourself in the visual narrative of Subhas Chandra Bose's life with Netaji - The Life in Pictures.This book provides a captivating visual journey, offering rare and iconic photographs that bring to life the extraordinary legacy of the charismatic leader."
       },
-      {   title:"poora_HAI_VISHWAS",
+      {  i:22,  
+         title:"poora_HAI_VISHWAS",
           src:"/booksImages/poora_HAI_VISHWAS.jpg",
           desc:" readers are taken on a motivational journey that emphasizes the power of belief. This book, in Hindi, inspires individuals to have unwavering faith in their abilities and dreams. Through anecdotes and wisdom, it encourages readers to overcome challenges and pursue their aspirations with confidence."
       },
-      {   title:"sabka saath sabka vikas",
+      {  i:23,  
+         title:"sabka saath sabka vikas",
           src:"/booksImages/sabka saath sabka vikas.jpg",
           desc:"Sabka Saath Sabka Vikas in Hindi encapsulates the vision of inclusive development. This book explores the concept of collective growth and progress, promoting a harmonious society where every individual contributes to the overall welfare of the nation."
       },
-      {   title:"Sardar Patel Sachitra jivani",
+      {  
+        i:24, 
+        title:"Sardar Patel Sachitra jivani",
           src:"/booksImages/Sardar Patel Sachitra jivani.jpeg"
       },
-      {   title:"SARDAR_PATEL_KI_ANMOL_VANI",
+      {  
+        i:25, 
+        title:"SARDAR_PATEL_KI_ANMOL_VANI",
           src:"/booksImages/SARDAR_PATEL_KI_ANMOL_VANI.jpg",
           desc:" Delve into the wisdom and leadership of Sardar Vallabhbhai Patel through Anmol Vaani. This Hindi book provides a collection of invaluable quotes and thoughts, shedding light on the principles and philosophies that guided this key architect of modern India"
       },
-      {   title:"The Gospel of Buddha",
+      {  i:26,
+           title:"The Gospel of Buddha",
           src:"/booksImages/The Gospel of Buddha.jpg",
           desc:"Delve into the spiritual and philosophical teachings of Buddhism with The Gospel of Buddha. This book, rooted in arts and culture, presents the timeless wisdom of Buddha, offering a profound exploration of the principles that form the core of this ancient and influential belief system."
       },
-      {   title:"The Warrior Democrat",
+      {   i:27,
+          title:"The Warrior Democrat",
           src:"/booksImages/THE_WARRIOR_DEMOCRAT_-_SYAMA_PRASAD_MOOKERJEE.jpg",
           desc:"The Warrior Democrat explores the intersection of democracy and leadership, drawing on historical and contemporary examples. This book delves into the qualities that make a leader resilient and effective in navigating the challenges of democratic governance"
       },
-      {   title:"Wings of Fire",
+      {   i:28,
+         title:"Wings of Fire",
           src:"/booksImages/Wings_of_Fire_by_A_P_J_Abdul_Kalam_Book_Cover.jpg"
       },
-      {   title:"Yojana Classics",
+      {  
+        i:29, 
+        title:"Yojana Classics",
           src:"/booksImages/Yojana_Classics_Cover_page.jpg",
           desc:"Yojana Classics - Arts and Culture is a literary treasure trove that explores the intersection of arts and culture in India. This compilation offers insightful essays and articles from the renowned Yojana magazine, providing a holistic perspective on the country's cultural heritage"
       },
@@ -154,9 +182,7 @@ const Allproducts = () => {
        setSelected(e.target.innerText)
     }
 
-    const cartItems = useSelector(state => state);
-    console.log("app js")
-    console.log(cartItems);
+  
 
   return (
    <>
@@ -179,13 +205,13 @@ const Allproducts = () => {
           return(<BookComponent title={title}  src={src} desc={desc} price={price} index={i}/>)})
         
         :selected==="LATEST BOOKS"?
-          latestbook.map(({title,src})=>{
-            return(<BookComponent title={title} src={src} />)
+          latestbook.map(({title,src,price,i,desc})=>{
+            return(<BookComponent title={title}  src={src} desc={desc} price={price} index={i} />)
           })
-        :latest_journal.map(({title,src})=>{
+        :latest_journal.map(({title,src,price,i,desc})=>{
           return(
           <>
-            <BookComponent title={title} src={src}/>
+            <BookComponent  title={title}  src={src} desc={desc} price={price} index={i}/>
           
           </>
           )
