@@ -20,18 +20,19 @@ import { useDispatch, useSelector } from 'react-redux';
 import LanguageSelect from "./LanguageSelect"
 
 
-const itemsNav = [{ title: "HOME" },
-{ title: "BUY", dropdownItems: ["Books", "EBooks/EJournal", "Journal"] },
-{ title: "ABOUT US", dropdownItems: ["Publication Division", "Vision And Mission"] },
-{ title: "PUBLICATIONS", dropdownItems: ["Books", "EBooks/EJournals", "Journals", "Catalogue", "Emanelled Printers", "List of Reprints"] },
-{ title: "FEEDBACK AND GRIEVANCE", dropdownItems: ["Feedback / Grievance", "Search Grievance", "Grievance Reopen"] },
-{ title: "DOCUMENTS", dropdownItems: ["Royalty Structure", "Tenders", "Tenders Awarded", "RTI", "Budget", "Author Agreement", "Book Selection & Publishing Process", "Job Notification", "Orders And Notices", "Suo Moto Disclosure"] },
-{ title: "BUSINESS", dropdownItems: ["Sales Emporium Address", "E Resource Aggregator", "Business Policy/Guidelines", "Agents(Books)", "Home Library Scheme", "Attractive Discounts", "Agents(Journals)", "Agents(Emp News)", "Agent Books Agreement"] },
-{ title: "SUBMIT BOOK MANUSCRIPT", dropdownItems: ["Create Author Account", "Submission Process"] },
-{ title: "VIEW MORE", dropdownItems: ["Citizen Charter", "Video Gallery", "Photo Gallery"] },
-{ title: "WHO'S WHO" }
-
+const itemsNav= [
+    {"title": "होम"},
+    {"title": "खरीदें", "dropdownItems": ["पुस्तकें", "ईबुक्स / ईजर्नल", "जर्नल"]},
+    {"title": "हमारे बारे में", "dropdownItems": ["प्रकाशन विभाग", "दृष्टिकोण और मिशन"]},
+    {"title": "प्रकाशन", "dropdownItems": ["पुस्तकें", "ईबुक्स / ईजर्नल्स", "जर्नल्स", "सूचीपत्र", "इमेल्ड प्रिंटर्स", "पुनर्मुद्रण की सूची"]},
+    {"title": "प्रतिक्रिया और शिकायत", "dropdownItems": ["प्रतिक्रिया / शिकायत", "शिकायत खोजें", "शिकायत पुनः खोलें"]},
+    {"title": "दस्तावेज़", "dropdownItems": ["रॉयल्टी संरचना", "निविदाएँ", "पुरस्कृत निविदाएं", "आरटीआई", "बजट", "लेखक समझौता", "पुस्तक चयन और प्रकाशन प्रक्रिया", "नौकरी अधिसूचना", "आदेश और सूचनाएं", "स्वत: मोटो प्रकटीकरण"]},
+    {"title": "व्यवसाय", "dropdownItems": ["बिक्री एम्पोरियम पता", "ई संसाधन एग्रीगेटर", "व्यापार नीति / दिशानिर्देश", "एजेंट्स (पुस्तकें)", "होम लाइब्रेरी योजना", "आकर्षक छूट", "एजेंट्स (जर्नल्स)", "एजेंट्स (एम्प न्यूज)", "एजेंट पुस्तकें समझौता"]},
+    {"title": "पुस्तक पांडुलिपि जमा करें", "dropdownItems": ["लेखक खाता बनाएँ", "सबमिशन प्रक्रिया"]},
+    {"title": "और देखें", "dropdownItems": ["नागरिक चार्टर", "वीडियो गैलरी", "फोटो गैलरी"]},
+    {"title": "कौन कौन से"}
 ]
+
 
 
 
@@ -48,7 +49,7 @@ const Navbar = () => {
 
         setOpen((prevOpen) => !prevOpen);
 
-        if (title=="HOME") {
+        if (title=="होम") {
           usenavigate("/")
         }
       };
@@ -161,9 +162,9 @@ const Navbar = () => {
                         className='w-[40px] h-[44px] '
                     />
                     <div className='w-[21vw] h-[9vh] mx-[10px]'>
-                        <h1 className='text-[22px] font-normal'>Publication Division</h1>
-                        <p className='text-[12px]'> Ministry of Information and Broadcasting <br />
-                            Government of India
+                        <h1 className='text-[22px] font-normal'>प्रकाशन प्रभाग</h1>
+                        <p className='text-[12px]'> सूचना एवं प्रसारण मंत्रालय<br />
+                        भारत सरकार
                         </p>
 
                     </div>
@@ -176,12 +177,12 @@ const Navbar = () => {
                     <img src="/images/G20_logo.png" alt=""
                         className='w-[90px] h-[65px] mx-[5px]'
                     />
-                    <div className='w-1/2 relative   '>
+                   <div className='w-1/2 relative   '>
 
-                 <LanguageSelect
-                
-                 />
-                    </div>
+<LanguageSelect
+
+/>
+   </div>
                 </div>}
 
                 <div className='w-[100vw] mt-[30px]'>

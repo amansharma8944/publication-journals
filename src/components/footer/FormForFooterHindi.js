@@ -16,7 +16,7 @@ const FormForFooter = () => {
       <TextField
       required
       id="outlined-required"
-      label="NAME"
+      label="नाम"
       defaultValue=""
       sx={{marginTop:"30px",
         '& .MuiInputBase-root': {
@@ -36,7 +36,7 @@ const FormForFooter = () => {
       <TextField
       required
       id="outlined-required"
-      label="EMAIL"
+      label="ईमेल"
       defaultValue=""
       sx={{marginTop:"30px",
         '& .MuiInputBase-root': {
@@ -57,7 +57,7 @@ const FormForFooter = () => {
      className='mt-[57px] h-[6vh]  border-[1px] rounded-[10px] font-[600] bg-[#fff2f2]
     hover:text-[white] hover:!bg-red-500
      '
-    >SUBSCRIBE TO PUBLICATION</button>
+    >प्रकाशन की सदस्यता लें</button>
       </FormControl>
 
      

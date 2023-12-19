@@ -14,7 +14,7 @@ const Footer = () => {
             <div className='flex-[0.5] px-[15px] border-r-[1px] border-[black] pl-[23px]'>
                 <h1 className='font-[450] text-[22px] text-[green] mb-[36px]'>ABOUT US</h1>
                 <p className='text-justify  w-[83%] tracking-[.5px] leading-[33px]'>
-                    Publications Division is a repository of books and journals highlighting subjects of national importance and India’s rich cultural heritage. Established in 1941, Publications Division has emerged as a premier publishing house of the Government of India, enriching the national knowledge repository in distinctive streams as under : ....
+                प्रकाशन प्रभाग राष्ट्रीय महत्व के विषयों और भारत की समृद्ध सांस्कृतिक विरासत को उजागर करने वाली पुस्तकों और पत्रिकाओं का भंडार है। 1941 में स्थापित, प्रकाशन प्रभाग भारत सरकार के एक प्रमुख प्रकाशन गृह के रूप में उभरा है, जो निम्नलिखित विशिष्ट धाराओं में राष्ट्रीय ज्ञान भंडार को समृद्ध कर रहा है: ....
 
 
                 </p>
@@ -22,51 +22,51 @@ const Footer = () => {
 
             </div>
             <div className='flex-[0.5] px-[15px] border-r-[1px] border-[black] ml-[5px]'>
-                <h1 className='font-[450] text-[22px] text-[green] mb-[36px]'>Related sites</h1>
+                <h1 className='font-[450] text-[22px] text-[green] mb-[36px]'>संबंधित साइटें</h1>
                 <ul>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">DPD JOURNALS</a>
+                        <a href="www.google.com">डीपीडी जर्नल्स</a>
                     </li>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">Employment News Website</a>
+                        <a href="www.google.com">रोजगार समाचार वेबसाइट</a>
                     </li>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">Ministry of I & B</a>
+                        <a href="www.google.com">सूचना एवं प्रसारण मंत्रालय</a>
                     </li>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">News On AIR</a>
+                        <a href="www.google.com">आकाशवाणी पर समाचार</a>
                     </li>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">Press Information Bureau</a>
+                        <a href="www.google.com">प्रेस सूचना ब्यूरो</a>
                     </li>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">DD News</a>
+                        <a href="www.google.com">डीडी न्यूज़</a>
                     </li>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">Film Division</a>
+                        <a href="www.google.com">फ़िल्म प्रभाग</a>
                     </li>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">Bureau of Outreach & Communication</a>
+                        <a href="www.google.com">आउटरीच एवं संचार ब्यूरो</a>
                     </li>
                 </ul>
 
 
             </div>
             <div className='w-[24vw] px-[15px] border-r-[1px]  border-[black]'>
-                <h1 className='font-[450] text-[22px] text-[green] mb-[36px]'>Information</h1>
+                <h1 className='font-[450] text-[22px] text-[green] mb-[36px]'>जानकारी</h1>
                 <ul>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">Photo Gallery</a>
+                        <a href="www.google.com">फोटो गैलरी</a>
                     </li>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">Video Gallery</a>
+                        <a href="www.google.com">वीडियो गैलरी</a>
                     </li>
                     <li className='mt-[10px] hover:cursor-pointer hover:text-[green]'>
-                        <a href="www.google.com">Events And Higlights</a>
+                        <a href="www.google.com">घटनाएँ और मुख्य बातें</a>
                     </li>
                    
                 </ul>
-                <h1 className='font-[450] text-[22px] text-[green] my-[30px]'>Get In Touch</h1>
+                <h1 className='font-[450] text-[22px] text-[green] my-[30px]'>संपर्क में रहो</h1>
                 <ul className='flex'>
 
                 <li>

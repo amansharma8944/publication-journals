@@ -289,8 +289,6 @@ const BookDetails = () => {
          { !Book[0]?.desc?<p className=' mt-[25px] w-[35vw] text-[19px] font-[450] text-[#6a6060] leading-[35px]'>Through this book, an attempt has been made to bring out the stories of some lesser known martyrs in front of the countrymen. During mass revolution, the yogis, fakirs and messengers in other form used to go from place to place to spread the flames of revolution.</p>
         :<p className=' mt-[25px] w-[35vw] text-[19px] font-[450] text-[#6a6060] leading-[35px]'>
           {Book[0]?.desc}
-
-
         </p> 
         }
 
@@ -300,7 +298,16 @@ const BookDetails = () => {
 
 
       </div>
-      <div className='w-full flex justify-center'><button className='h-[6vh] w-[8vw] border border-[black] p-[5px] font-[500] hover:cursor-pointer hover:bg-[green] hover:text-[white]'
+      <div className='w-full flex justify-center'>
+        
+        
+        <button
+        className='h-[6vh] w-[8vw] border mr-[25px] border-[black] p-[5px] font-[500] hover:cursor-pointer hover:bg-[green] hover:text-[white]'
+        >BUT NOW</button>
+        <button
+        className='h-[6vh] w-[8vw] border mr-[25px] border-[black] p-[5px] font-[500] hover:cursor-pointer hover:bg-[green] hover:text-[white]'
+        >BUY BACK</button>
+        <button className='h-[6vh] w-[8vw] border border-[black] p-[5px] font-[500] hover:cursor-pointer hover:bg-[green] hover:text-[white]'
         onClick={() => handleAddToCart(Book[0].title, Book[0].price, Book[0].src, Book[0].desc, Book[0].index)}
       >ADD TO CART</button></div>
       <Footer />
