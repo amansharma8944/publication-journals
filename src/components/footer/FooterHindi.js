@@ -4,7 +4,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import FormForFooter from './FormForFooter';
+import FormForFooterHindi from './FormForFooterHindi';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Footer = () => {
@@ -196,7 +196,7 @@ const Footer = () => {
             </div>
 
           <div className='flex-[0.5] px-[15px]  border-[black] ml-[5px]'>
-          <FormForFooter/>
+          <FormForFooterHindi/>
           </div>
         </footer>
     )
