@@ -19,11 +19,11 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useAuth } from '../Context/AuthContext';
 import { useHistory } from 'react-router-dom';
+import { useAuthContext } from "../Context/AuthContext";
 
 
 
-//temp variable will remove later
-// const isLoggedin = false;
+
 
 const itemsNav = [{ title: "HOME" },
 { title: "BUY", dropdownItems: ["Books", "EBooks/EJournal", "Journal"] },
@@ -43,23 +43,12 @@ const itemsNav = [{ title: "HOME" },
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const [cartCounter, setCartCounter] = useState(0);
-
-  const { isLoggedin, setIsLoggedin } = useAuth();
-
-
-
-  const logout = () => {
-    setIsLoggedin(false);
-    localStorage.removeItem('token');
-    window.location.replace("/user/login");
+  const { user, removeToken } = useAuthContext();
+  const handleLogout = (e) => {
+    e.preventDefault();
+    removeToken();
+    window.location.href = "/user/login";
   }
-
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      setIsLoggedin(true);
-    }
-  }, []);
 
   const anchorRef = React.useRef(null);
   const usenavigate = useNavigate();
@@ -68,7 +57,7 @@ const Navbar = () => {
 
     setOpen((prevOpen) => !prevOpen);
 
-    if (title == "HOME") {
+    if (title === "HOME") {
       usenavigate("/")
     }
   };
@@ -224,7 +213,7 @@ const Navbar = () => {
             })}
 
             <div>
-              {isLoggedin ? <div className='flex'>
+              {user && <div className='flex'>
                 <div className='relative'>
                   <ShoppingCartIcon
                     sx={{
@@ -238,27 +227,28 @@ const Navbar = () => {
                     }}
 
                     onClick={() => {
-                      usenavigate("/cart")
+                      usenavigate("/user/cart")
                     }}
                   />
                   <p className='absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 text-[white] bg-[purple] w-[20px] h-[20px] flex items-center justify-center rounded-full'>{cartCounter}</p>
                 </div>
-                <button className=' ml-10 text-primary-600 border-2 border-primary-600 p-2 rounded-[10px] hover:bg-primary-600 hover:text-white' onClick={() => logout()}>Logout</button>
+                <button className=' ml-10 text-primary-600 border-2 border-primary-600 p-2 rounded-[10px] hover:bg-primary-600 hover:text-white' onClick={handleLogout}>Logout</button>
               </div>
-            : <div className=' ml-10 text-primary-600 border-2 border-primary-600 p-2 rounded-[10px] hover:bg-primary-600 hover:text-white '><a href="/user/login">Login / Signup</a></div>}
-        </div>
+              }
+              {!user && <div className=' ml-10 text-primary-600 border-2 border-primary-600 p-2 rounded-[10px] hover:bg-primary-600 hover:text-white '><a href="/user/login">Login / Signup</a></div>}
+            </div>
 
-      </List>
-    </div >
-      { menuContent }
+          </List>
+        </div >
+        {menuContent}
 
 
-      < div className = 'w-full  marquee' >
-        <p>
-          heloo
-        </p>
+        < div className='w-full  marquee' >
+          <p>
+            heloo
+          </p>
 
-      </div >
+        </div >
       </nav >
     </>
   )

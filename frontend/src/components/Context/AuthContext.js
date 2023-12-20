@@ -1,21 +1,32 @@
-import React, { createContext, useState,useContext } from 'react';
+import { createContext, useState, useContext } from 'react'
 
 export const AuthContext = createContext();
 
-export const useAuth = () => {
-    const context = useContext(AuthContext);
-    if (!context) {
-        throw new Error(`useAuth must be used within a AuthProvider`);
-    }
-    return context;
-};
+export const useAuthContext = () => {
+  return useContext(AuthContext)
+}
 
-export const AuthProvider = ({ children }) => {
-    const [isLoggedin, setIsLoggedin] = useState(false);
+// eslint-disable-next-line react/prop-types
+const AuthProvider = ({ children }) => {
 
-    return (
-        <AuthContext.Provider value={{ isLoggedin, setIsLoggedin }}>
-            {children}
-        </AuthContext.Provider>
-    );
-};
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || null);
+
+  const removeToken = () => {
+    // Remove the user's data from local storage
+    localStorage.removeItem('user')
+
+    // If you're using a state to store the user's data, update it
+    setUser(null) // Uncomment this if you have a setUser function
+
+    // Navigate the user to the login page
+  }
+
+  return (
+    <AuthContext.Provider value={{ user, removeToken }}>
+      {children}
+    </AuthContext.Provider>
+  )
+
+}
+
+export default AuthProvider;

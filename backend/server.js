@@ -9,6 +9,7 @@ const userRouter = require("./routes/userRoutes");
 
 app.use(cors());
 app.use(express.json());
+app.use("/user", userRouter);
 
 
 app.listen(port, () => {
@@ -27,7 +28,6 @@ connection.once("open", () => {
 connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
-app.use("/user", userRouter);
 
 
 
