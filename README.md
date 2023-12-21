@@ -12,5 +12,5 @@
 
 ### Contributors to this website
 
-- [Ashish Vaidya [Calm Person]](https://github.com/Ashish-Sunil-Vaidya)
 - [Aman Deep Sharma [amansharma8944]](https://github.com/amansharma8944)
+- [Ashish Vaidya [Calm Person]](https://github.com/Ashish-Sunil-Vaidya)
