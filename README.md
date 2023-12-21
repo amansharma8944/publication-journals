@@ -1,4 +1,1 @@
-```
-  npm start
-'''
-When you clone it
+``` npm start ``` when you clone it
