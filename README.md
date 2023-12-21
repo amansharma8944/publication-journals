@@ -1,2 +1,4 @@
-frontend: npm start,   
-backend: npm run dev
+```
+  npm start
+'''
+When you clone it
