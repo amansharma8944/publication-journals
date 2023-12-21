@@ -1,6 +1,6 @@
 # Publications Journal
 ## SIH 2023
-### A web application to manage publications
+### A web application to manage publications for Goverment of India
 
 
 > **Note**: You don't need to navigate to frontend and backend separately and run `npm install` and `npm start`. You can do it from the root directory itself.
